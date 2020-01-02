@@ -29,6 +29,8 @@ namespace DesignPatternPrograms
                         Console.WriteLine();
                         Console.WriteLine("1. Factory Pattern Program");
                         Console.WriteLine("2. Prototype Pattern Program");
+                        Console.WriteLine("3. Observer Design Program");
+                        Console.WriteLine("4. Visitor Design Program");
                         Console.WriteLine("10. Exit");
                         Console.Write("Enter Your Choice: ");
                         flag = int.TryParse(Console.ReadLine(), out choice);
@@ -43,6 +45,14 @@ namespace DesignPatternPrograms
 
                         case 2:
                             CreationalDesignPatterns.PrototypePattern.EmployeeMain.Employee();
+                            break;
+
+                        case 3:
+                            BehavioralDesignPatterns.ObserverDesignPattern.ObserverMain.Observer();
+                            break;
+
+                        case 4:
+                            BehavioralDesignPatterns.VisitorDesignPattern.VisitorMain.Visitor();
                             break;
 
                         case 10:
