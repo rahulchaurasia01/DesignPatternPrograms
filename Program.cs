@@ -29,8 +29,10 @@ namespace DesignPatternPrograms
                         Console.WriteLine();
                         Console.WriteLine("1. Factory Pattern Program");
                         Console.WriteLine("2. Prototype Pattern Program");
-                        Console.WriteLine("3. Observer Design Program");
-                        Console.WriteLine("4. Visitor Design Program");
+                        Console.WriteLine("3. Proxy Desgin Pattern Program");
+                        Console.WriteLine("4. Observer Design Program");
+                        Console.WriteLine("5. Visitor Design Program");
+                        Console.WriteLine("6. Mediator Design Program");
                         Console.WriteLine("10. Exit");
                         Console.Write("Enter Your Choice: ");
                         flag = int.TryParse(Console.ReadLine(), out choice);
@@ -48,11 +50,19 @@ namespace DesignPatternPrograms
                             break;
 
                         case 3:
-                            BehavioralDesignPatterns.ObserverDesignPattern.ObserverMain.Observer();
+                            StructuralDesignPatterns.ProxyDesignPattern.ProxyMain.Proxy();
                             break;
 
                         case 4:
+                            BehavioralDesignPatterns.ObserverDesignPattern.ObserverMain.Observer();
+                            break;
+
+                        case 5:
                             BehavioralDesignPatterns.VisitorDesignPattern.VisitorMain.Visitor();
+                            break;
+
+                        case 6:
+                            BehavioralDesignPatterns.MediatorDesignPattern.MediatorMain.Mediator();
                             break;
 
                         case 10:
