@@ -1,0 +1,32 @@
+{
+  "AddressBook": [
+    {
+      "Name": "Lucy",
+      "MobileNumber": "1234561789",
+      "EmailId": null,
+      "Address": "Chembur, India",
+      "Zip": "123456"
+    },
+    {
+      "Name": "Pooja",
+      "MobileNumber": "7581234567",
+      "EmailId": "pooja@eternity.com",
+      "Address": "pooja Chembur",
+      "Zip": "400071"
+    },
+    {
+      "Name": "Rahul",
+      "MobileNumber": "1234567891",
+      "EmailId": null,
+      "Address": "Mumbai India",
+      "Zip": "400071"
+    },
+    {
+      "Name": "Idiot",
+      "MobileNumber": "7894561325",
+      "EmailId": "idiot@eternity.com",
+      "Address": "India, Mumbai",
+      "Zip": "400089"
+    }
+  ]
+}
