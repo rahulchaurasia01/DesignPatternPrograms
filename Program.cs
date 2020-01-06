@@ -27,14 +27,15 @@ namespace DesignPatternPrograms
                         Console.WriteLine();
                         Console.WriteLine("Welcome to BridgeLabz");
                         Console.WriteLine();
-                        Console.WriteLine("1. Factory Pattern Program");
-                        Console.WriteLine("2. Prototype Pattern Program");
-                        Console.WriteLine("3. Adapter Design Pattern Program");
-                        Console.WriteLine("4. Facade Design Pattern Program");
-                        Console.WriteLine("5. Proxy Desgin Pattern Program");
-                        Console.WriteLine("6. Observer Design Program");
-                        Console.WriteLine("7. Visitor Design Program");
-                        Console.WriteLine("8. Mediator Design Program");
+                        Console.WriteLine("1. Singleton Design Pattern Program");
+                        Console.WriteLine("2. Factory Design Pattern Program");
+                        Console.WriteLine("3. Prototype Design Pattern Program");
+                        Console.WriteLine("4. Adapter Design Pattern Program");
+                        Console.WriteLine("5. Facade Design Pattern Program");
+                        Console.WriteLine("6. Proxy Desgin Pattern Program");
+                        Console.WriteLine("7. Observer Design Program");
+                        Console.WriteLine("8. Visitor Design Program");
+                        Console.WriteLine("9. Mediator Design Program");
                         Console.WriteLine("10. Exit");
                         Console.Write("Enter Your Choice: ");
                         flag = int.TryParse(Console.ReadLine(), out choice);
@@ -43,35 +44,40 @@ namespace DesignPatternPrograms
                     flag = false;
                     switch (choice)
                     {
+
                         case 1:
-                            CreationalDesignPatterns.FactoryPattern.Main.StartMain();
+                            CreationalDesignPatterns.SingletonPattern.SingletonPatterns.SingletonPattern();
                             break;
 
                         case 2:
-                            CreationalDesignPatterns.PrototypePattern.EmployeeMain.Employee();
+                            CreationalDesignPatterns.FactoryPattern.Main.StartMain();
                             break;
 
                         case 3:
-                            StructuralDesignPatterns.AdapterDesignPattern.AdapterMain.Adapter();
+                            CreationalDesignPatterns.PrototypePattern.EmployeeMain.Employee();
                             break;
 
                         case 4:
-                            StructuralDesignPatterns.FacadeDesignPattern.AddressBookProgram.AddressBook();
+                            StructuralDesignPatterns.AdapterDesignPattern.AdapterMain.Adapter();
                             break;
 
                         case 5:
-                            StructuralDesignPatterns.ProxyDesignPattern.ProxyMain.Proxy();
+                            StructuralDesignPatterns.FacadeDesignPattern.AddressBookProgram.AddressBook();
                             break;
 
                         case 6:
-                            BehavioralDesignPatterns.ObserverDesignPattern.ObserverMain.Observer();
+                            StructuralDesignPatterns.ProxyDesignPattern.ProxyMain.Proxy();
                             break;
 
                         case 7:
-                            BehavioralDesignPatterns.VisitorDesignPattern.VisitorMain.Visitor();
+                            BehavioralDesignPatterns.ObserverDesignPattern.ObserverMain.Observer();
                             break;
 
                         case 8:
+                            BehavioralDesignPatterns.VisitorDesignPattern.VisitorMain.Visitor();
+                            break;
+
+                        case 9:
                             BehavioralDesignPatterns.MediatorDesignPattern.MediatorMain.Mediator();
                             break;
 
